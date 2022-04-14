@@ -1,0 +1,177 @@
+export const GIVER_CONTRACT_ADDR="0x9508b9400A8580810932d7d9469678AC1451296A";
+export const GIVER_CONTRACT_ABI=[
+                                    {
+                                      "inputs": [],
+                                      "stateMutability": "nonpayable",
+                                      "type": "constructor"
+                                    },
+                                    {
+                                      "anonymous": false,
+                                      "inputs": [
+                                        {
+                                          "indexed": true,
+                                          "internalType": "address",
+                                          "name": "previousOwner",
+                                          "type": "address"
+                                        },
+                                        {
+                                          "indexed": true,
+                                          "internalType": "address",
+                                          "name": "newOwner",
+                                          "type": "address"
+                                        }
+                                      ],
+                                      "name": "OwnershipTransferred",
+                                      "type": "event"
+                                    },
+                                    {
+                                      "inputs": [
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "",
+                                          "type": "uint256"
+                                        }
+                                      ],
+                                      "name": "applications",
+                                      "outputs": [
+                                        {
+                                          "internalType": "string",
+                                          "name": "name",
+                                          "type": "string"
+                                        },
+                                        {
+                                          "internalType": "string",
+                                          "name": "details",
+                                          "type": "string"
+                                        },
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "targetAmount",
+                                          "type": "uint256"
+                                        },
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "funds",
+                                          "type": "uint256"
+                                        },
+                                        {
+                                          "internalType": "address",
+                                          "name": "owner",
+                                          "type": "address"
+                                        },
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "end",
+                                          "type": "uint256"
+                                        },
+                                        {
+                                          "internalType": "bool",
+                                          "name": "verified",
+                                          "type": "bool"
+                                        }
+                                      ],
+                                      "stateMutability": "view",
+                                      "type": "function"
+                                    },
+                                    {
+                                      "inputs": [
+                                        {
+                                          "internalType": "string",
+                                          "name": "_name",
+                                          "type": "string"
+                                        },
+                                        {
+                                          "internalType": "string",
+                                          "name": "_details",
+                                          "type": "string"
+                                        },
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "_targetAmt",
+                                          "type": "uint256"
+                                        }
+                                      ],
+                                      "name": "createApplication",
+                                      "outputs": [
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "applicationId",
+                                          "type": "uint256"
+                                        }
+                                      ],
+                                      "stateMutability": "nonpayable",
+                                      "type": "function"
+                                    },
+                                    {
+                                      "inputs": [
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "_applicationId",
+                                          "type": "uint256"
+                                        }
+                                      ],
+                                      "name": "deposit",
+                                      "outputs": [],
+                                      "stateMutability": "payable",
+                                      "type": "function"
+                                    },
+                                    {
+                                      "inputs": [],
+                                      "name": "owner",
+                                      "outputs": [
+                                        {
+                                          "internalType": "address",
+                                          "name": "",
+                                          "type": "address"
+                                        }
+                                      ],
+                                      "stateMutability": "view",
+                                      "type": "function"
+                                    },
+                                    {
+                                      "inputs": [
+                                        {
+                                          "internalType": "bool",
+                                          "name": "_paused",
+                                          "type": "bool"
+                                        }
+                                      ],
+                                      "name": "pauseContract",
+                                      "outputs": [],
+                                      "stateMutability": "nonpayable",
+                                      "type": "function"
+                                    },
+                                    {
+                                      "inputs": [],
+                                      "name": "renounceOwnership",
+                                      "outputs": [],
+                                      "stateMutability": "nonpayable",
+                                      "type": "function"
+                                    },
+                                    {
+                                      "inputs": [
+                                        {
+                                          "internalType": "address",
+                                          "name": "newOwner",
+                                          "type": "address"
+                                        }
+                                      ],
+                                      "name": "transferOwnership",
+                                      "outputs": [],
+                                      "stateMutability": "nonpayable",
+                                      "type": "function"
+                                    },
+                                    {
+                                      "inputs": [
+                                        {
+                                          "internalType": "uint256",
+                                          "name": "_applicationId",
+                                          "type": "uint256"
+                                        }
+                                      ],
+                                      "name": "withdraw",
+                                      "outputs": [],
+                                      "stateMutability": "nonpayable",
+                                      "type": "function"
+                                    }
+                                  ]
